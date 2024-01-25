@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@1,400;1,800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #F9EFDB;
+            font-family: 'Shantell Sans', cursive;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            border-bottom: 1.5px solid #EBD9B4;
+        }
+
+        p {
+            color: #638889;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 60px;
+        }
+
+        article.featured > img, article > img {
+            width: 100%;
+            border: 5px solid white;
+            border-radius: 15px;
+        }
+
+        .featured {
+            grid-column: span 3;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            align-items: center;
+            border-bottom: 1.5px solid #EBD9B4;
+            padding-bottom: 50px;
+        }
+
+        @media (min-width: 800px) and (max-width: 1300px) {
+            article {
+                grid-column: span 3;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 30px;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 799px) {
+            .grid-container, .featured {
+                display: block;
+            }
+
+            .featured {
+                padding-bottom: 25px;
+                margin-bottom: 30px;
+            }
+        }    
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Traveling worldwide</h1>
+    </header>
+
+    <main class="grid-container">    
+        <article  class="featured">
+            <img src="./images/jpg-1.jpg" alt="forest"/>
+            <div>     
+                <h3>Forest with the cliff</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia illum dolores ad qui non molestiae magni delectus quisquam cupiditate numquam blanditiis, officia aperiam aut
+                 soluta sequi, labore quae explicabo cum? Recusandae, magnam adipisci? Temporibus dolorem inventore reiciendis mollitia sapiente ea nisi corporis, tempora sed aliquid qui quod, 
+                 illum ullam tempore deserunt dolorum labore in fugiat sit quam eligendi praesentium nihil placeat neque? Minus tenetur necessitatibus natus, tempore excepturi molestias a 
+                 voluptatem minima obcaecati quae cupiditate, enim rem eligendi neque debitis?</p>
+            </div>
+        </article>
+        
+        <article>
+            <img src="./images/jpg-2.jpg"/>
+            <div>
+                <h3>Canyon in desert</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab enim nobis sapiente aperiam quidem praesentium totam mollitia a provident molestias!</p>
+            </div>
+        </article>
+
+        <article>
+            <img src="./images/jpg-3.jpg"/>
+            <div>
+                <h3>View of dawning sun, clouds and forest</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab enim nobis sapiente aperiam quidem praesentium totam mollitia a provident molestias!</p>
+            </div>
+        </article>
+
+        <article>
+            <img src="./images/jpg-4.jpg"/>
+            <div>
+                <h3>Meadow with golden color grass</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab enim nobis sapiente aperiam quidem praesentium totam mollitia a provident molestias!</p>
+            </div>
+        </article>
+
+    </main>
+</body>
+</html>
